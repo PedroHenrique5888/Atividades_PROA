@@ -1,30 +1,27 @@
 programa
 {
-	
-	funcao inicio()
-{
-		para (inteiro f=15; f<=100; f++)
-		para (inteiro i=15; i<=100; i++)		
-		para (inteiro c=15; c<=100; c++)
-		{
-		se(i == 100 e c == 100)
-		{
-			inteiro media = (c+i)/f
-			escreva(media,"\n")
-		}
-		}
-		
-		
-   			
-}
-}
+    funcao inicio()
+    {
+        real i, soma = 0.0, quantidade = 0.0
+        real media
 
+        para(i = 15.0; i <= 100; i++)
+        {
+            soma = soma + i
+            quantidade = quantidade + 1
+        }
+
+        media = soma / quantidade
+
+        escreva("Média = ", media)
+    }
+}
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 236; 
+ * @POSICAO-CURSOR = 306; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
